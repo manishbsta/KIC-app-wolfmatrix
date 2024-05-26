@@ -7,7 +7,7 @@ describe('MyComponent', () => {
   it('renders the component', () => {
     const { getByTestId } = render(<MyComponent data={DATA} />);
 
-    // Check if the search input and clear button are rendered
+    // Check if the search input, clear button and flatlist are rendered
     expect(getByTestId('SearchBar')).toBeTruthy();
     expect(getByTestId('ClearButton')).toBeTruthy();
     expect(getByTestId('DataList')).toBeTruthy();
